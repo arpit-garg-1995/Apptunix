@@ -3,18 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CBBD70CC94B272636EC0A18 /* Pods_Apptunix_ApptunixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00413C3F1C1EFF8570F7399 /* Pods_Apptunix_ApptunixUITests.framework */; };
+		8F4A06362D5E4AE7B9A7DE35 /* Pods_Apptunix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DFE6BCCF37534DCF9CFB43 /* Pods_Apptunix.framework */; };
+		A606FD72017F8F9654526C1B /* Pods_ApptunixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C9FCAAFFDD648CE5C98F47 /* Pods_ApptunixTests.framework */; };
 		D1DAF826258D2105004F1A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF825258D2105004F1A6F /* AppDelegate.swift */; };
 		D1DAF828258D2105004F1A6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF827258D2105004F1A6F /* SceneDelegate.swift */; };
-		D1DAF82A258D2105004F1A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF829258D2105004F1A6F /* ViewController.swift */; };
 		D1DAF82D258D2105004F1A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DAF82B258D2105004F1A6F /* Main.storyboard */; };
 		D1DAF82F258D210A004F1A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DAF82E258D210A004F1A6F /* Assets.xcassets */; };
 		D1DAF832258D210A004F1A6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DAF830258D210A004F1A6F /* LaunchScreen.storyboard */; };
 		D1DAF83D258D210A004F1A6F /* ApptunixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF83C258D210A004F1A6F /* ApptunixTests.swift */; };
 		D1DAF848258D210B004F1A6F /* ApptunixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF847258D210B004F1A6F /* ApptunixUITests.swift */; };
+		D1DAF85C258D2328004F1A6F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF85B258D2328004F1A6F /* NetworkManager.swift */; };
+		D1DAF861258D276E004F1A6F /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF860258D276E004F1A6F /* AppConfiguration.swift */; };
+		D1DAF863258D2B3B004F1A6F /* HomeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF862258D2B3B004F1A6F /* HomeViewModal.swift */; };
+		D1DAF865258D311E004F1A6F /* HomeModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF864258D311E004F1A6F /* HomeModal.swift */; };
+		D1DAF867258D365D004F1A6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF866258D365D004F1A6F /* HomeViewController.swift */; };
+		D1DAF869258D366E004F1A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF868258D366E004F1A6F /* ViewController.swift */; };
+		D1DAF873258D3E84004F1A6F /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF872258D3E84004F1A6F /* AppExtensions.swift */; };
+		D1DAF876258D416B004F1A6F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF874258D416B004F1A6F /* CategoryCollectionViewCell.swift */; };
+		D1DAF877258D416B004F1A6F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1DAF875258D416B004F1A6F /* CategoryCollectionViewCell.xib */; };
+		D1DAF87A258D418D004F1A6F /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF878258D418D004F1A6F /* RestaurantCollectionViewCell.swift */; };
+		D1DAF87B258D418D004F1A6F /* RestaurantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1DAF879258D418D004F1A6F /* RestaurantCollectionViewCell.xib */; };
+		D1DAF87E258D41A7004F1A6F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF87C258D41A7004F1A6F /* TableViewCell.swift */; };
+		D1DAF87F258D41A7004F1A6F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1DAF87D258D41A7004F1A6F /* TableViewCell.xib */; };
+		D1DAF882258D461E004F1A6F /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DAF880258D461E004F1A6F /* RestaurantTableViewCell.swift */; };
+		D1DAF883258D461E004F1A6F /* RestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1DAF881258D461E004F1A6F /* RestaurantTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +52,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23DFE6BCCF37534DCF9CFB43 /* Pods_Apptunix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apptunix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		291C6912D407EEC1B1AB8174 /* Pods-ApptunixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApptunixTests.release.xcconfig"; path = "Target Support Files/Pods-ApptunixTests/Pods-ApptunixTests.release.xcconfig"; sourceTree = "<group>"; };
+		44D02FBC4216DCDCA20B4924 /* Pods-Apptunix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apptunix.debug.xcconfig"; path = "Target Support Files/Pods-Apptunix/Pods-Apptunix.debug.xcconfig"; sourceTree = "<group>"; };
+		6A89B975702F9880005ECB4A /* Pods-Apptunix-ApptunixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apptunix-ApptunixUITests.debug.xcconfig"; path = "Target Support Files/Pods-Apptunix-ApptunixUITests/Pods-Apptunix-ApptunixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		80315EB8473E872DE9365771 /* Pods-ApptunixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApptunixTests.debug.xcconfig"; path = "Target Support Files/Pods-ApptunixTests/Pods-ApptunixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4A8D13F24C50F50A415A32F /* Pods-Apptunix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apptunix.release.xcconfig"; path = "Target Support Files/Pods-Apptunix/Pods-Apptunix.release.xcconfig"; sourceTree = "<group>"; };
+		C00413C3F1C1EFF8570F7399 /* Pods_Apptunix_ApptunixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apptunix_ApptunixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C9FCAAFFDD648CE5C98F47 /* Pods_ApptunixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApptunixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6A7EB570F7F2AD33846D53 /* Pods-Apptunix-ApptunixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apptunix-ApptunixUITests.release.xcconfig"; path = "Target Support Files/Pods-Apptunix-ApptunixUITests/Pods-Apptunix-ApptunixUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D1DAF822258D2105004F1A6F /* Apptunix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apptunix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DAF825258D2105004F1A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1DAF827258D2105004F1A6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D1DAF829258D2105004F1A6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1DAF82C258D2105004F1A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1DAF82E258D210A004F1A6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1DAF831258D210A004F1A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +74,21 @@
 		D1DAF843258D210B004F1A6F /* ApptunixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApptunixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DAF847258D210B004F1A6F /* ApptunixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptunixUITests.swift; sourceTree = "<group>"; };
 		D1DAF849258D210B004F1A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1DAF85B258D2328004F1A6F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D1DAF860258D276E004F1A6F /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		D1DAF862258D2B3B004F1A6F /* HomeViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModal.swift; sourceTree = "<group>"; };
+		D1DAF864258D311E004F1A6F /* HomeModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModal.swift; sourceTree = "<group>"; };
+		D1DAF866258D365D004F1A6F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D1DAF868258D366E004F1A6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1DAF872258D3E84004F1A6F /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
+		D1DAF874258D416B004F1A6F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D1DAF875258D416B004F1A6F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		D1DAF878258D418D004F1A6F /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
+		D1DAF879258D418D004F1A6F /* RestaurantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCollectionViewCell.xib; sourceTree = "<group>"; };
+		D1DAF87C258D41A7004F1A6F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D1DAF87D258D41A7004F1A6F /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		D1DAF880258D461E004F1A6F /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		D1DAF881258D461E004F1A6F /* RestaurantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4A06362D5E4AE7B9A7DE35 /* Pods_Apptunix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A606FD72017F8F9654526C1B /* Pods_ApptunixTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +112,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBBD70CC94B272636EC0A18 /* Pods_Apptunix_ApptunixUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C1E638185933084DE6A57C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44D02FBC4216DCDCA20B4924 /* Pods-Apptunix.debug.xcconfig */,
+				B4A8D13F24C50F50A415A32F /* Pods-Apptunix.release.xcconfig */,
+				6A89B975702F9880005ECB4A /* Pods-Apptunix-ApptunixUITests.debug.xcconfig */,
+				CE6A7EB570F7F2AD33846D53 /* Pods-Apptunix-ApptunixUITests.release.xcconfig */,
+				80315EB8473E872DE9365771 /* Pods-ApptunixTests.debug.xcconfig */,
+				291C6912D407EEC1B1AB8174 /* Pods-ApptunixTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		51617C72ED81997294D99F04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23DFE6BCCF37534DCF9CFB43 /* Pods_Apptunix.framework */,
+				C00413C3F1C1EFF8570F7399 /* Pods_Apptunix_ApptunixUITests.framework */,
+				C0C9FCAAFFDD648CE5C98F47 /* Pods_ApptunixTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1DAF819258D2105004F1A6F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +149,8 @@
 				D1DAF83B258D210A004F1A6F /* ApptunixTests */,
 				D1DAF846258D210B004F1A6F /* ApptunixUITests */,
 				D1DAF823258D2105004F1A6F /* Products */,
+				12C1E638185933084DE6A57C /* Pods */,
+				51617C72ED81997294D99F04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +167,13 @@
 		D1DAF824258D2105004F1A6F /* Apptunix */ = {
 			isa = PBXGroup;
 			children = (
+				D1DAF85F258D2750004F1A6F /* HelperData */,
+				D1DAF858258D22F5004F1A6F /* Network */,
+				D1DAF857258D2124004F1A6F /* Controller */,
+				D1DAF856258D2120004F1A6F /* View */,
+				D1DAF855258D2117004F1A6F /* Model */,
 				D1DAF825258D2105004F1A6F /* AppDelegate.swift */,
 				D1DAF827258D2105004F1A6F /* SceneDelegate.swift */,
-				D1DAF829258D2105004F1A6F /* ViewController.swift */,
 				D1DAF82B258D2105004F1A6F /* Main.storyboard */,
 				D1DAF82E258D210A004F1A6F /* Assets.xcassets */,
 				D1DAF830258D210A004F1A6F /* LaunchScreen.storyboard */,
@@ -128,6 +200,56 @@
 			path = ApptunixUITests;
 			sourceTree = "<group>";
 		};
+		D1DAF855258D2117004F1A6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAF862258D2B3B004F1A6F /* HomeViewModal.swift */,
+				D1DAF864258D311E004F1A6F /* HomeModal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1DAF856258D2120004F1A6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAF874258D416B004F1A6F /* CategoryCollectionViewCell.swift */,
+				D1DAF875258D416B004F1A6F /* CategoryCollectionViewCell.xib */,
+				D1DAF878258D418D004F1A6F /* RestaurantCollectionViewCell.swift */,
+				D1DAF879258D418D004F1A6F /* RestaurantCollectionViewCell.xib */,
+				D1DAF87C258D41A7004F1A6F /* TableViewCell.swift */,
+				D1DAF87D258D41A7004F1A6F /* TableViewCell.xib */,
+				D1DAF880258D461E004F1A6F /* RestaurantTableViewCell.swift */,
+				D1DAF881258D461E004F1A6F /* RestaurantTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1DAF857258D2124004F1A6F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAF866258D365D004F1A6F /* HomeViewController.swift */,
+				D1DAF868258D366E004F1A6F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1DAF858258D22F5004F1A6F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAF85B258D2328004F1A6F /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D1DAF85F258D2750004F1A6F /* HelperData */ = {
+			isa = PBXGroup;
+			children = (
+				D1DAF860258D276E004F1A6F /* AppConfiguration.swift */,
+				D1DAF872258D3E84004F1A6F /* AppExtensions.swift */,
+			);
+			path = HelperData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1DAF84C258D210B004F1A6F /* Build configuration list for PBXNativeTarget "Apptunix" */;
 			buildPhases = (
+				01CA032D81906D33ABC6CB34 /* [CP] Check Pods Manifest.lock */,
 				D1DAF81E258D2105004F1A6F /* Sources */,
 				D1DAF81F258D2105004F1A6F /* Frameworks */,
 				D1DAF820258D2105004F1A6F /* Resources */,
+				7FEA815470E9F6B50D71FEBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1DAF84F258D210B004F1A6F /* Build configuration list for PBXNativeTarget "ApptunixTests" */;
 			buildPhases = (
+				C4CF5558C8FF0C2C1E261B00 /* [CP] Check Pods Manifest.lock */,
 				D1DAF834258D210A004F1A6F /* Sources */,
 				D1DAF835258D210A004F1A6F /* Frameworks */,
 				D1DAF836258D210A004F1A6F /* Resources */,
@@ -170,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1DAF852258D210B004F1A6F /* Build configuration list for PBXNativeTarget "ApptunixUITests" */;
 			buildPhases = (
+				79F0002524538436B3DE0A0F /* [CP] Check Pods Manifest.lock */,
 				D1DAF83F258D210B004F1A6F /* Sources */,
 				D1DAF840258D210B004F1A6F /* Frameworks */,
 				D1DAF841258D210B004F1A6F /* Resources */,
+				D9A41FCE744F9E935EB8BA6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +359,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1DAF877258D416B004F1A6F /* CategoryCollectionViewCell.xib in Resources */,
+				D1DAF87F258D41A7004F1A6F /* TableViewCell.xib in Resources */,
 				D1DAF832258D210A004F1A6F /* LaunchScreen.storyboard in Resources */,
+				D1DAF87B258D418D004F1A6F /* RestaurantCollectionViewCell.xib in Resources */,
 				D1DAF82F258D210A004F1A6F /* Assets.xcassets in Resources */,
+				D1DAF883258D461E004F1A6F /* RestaurantTableViewCell.xib in Resources */,
 				D1DAF82D258D2105004F1A6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +385,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01CA032D81906D33ABC6CB34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apptunix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79F0002524538436B3DE0A0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apptunix-ApptunixUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FEA815470E9F6B50D71FEBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Apptunix/Pods-Apptunix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Apptunix/Pods-Apptunix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Apptunix/Pods-Apptunix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CF5558C8FF0C2C1E261B00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApptunixTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9A41FCE744F9E935EB8BA6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Apptunix-ApptunixUITests/Pods-Apptunix-ApptunixUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Apptunix-ApptunixUITests/Pods-Apptunix-ApptunixUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Apptunix-ApptunixUITests/Pods-Apptunix-ApptunixUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D1DAF81E258D2105004F1A6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DAF82A258D2105004F1A6F /* ViewController.swift in Sources */,
+				D1DAF865258D311E004F1A6F /* HomeModal.swift in Sources */,
+				D1DAF863258D2B3B004F1A6F /* HomeViewModal.swift in Sources */,
+				D1DAF861258D276E004F1A6F /* AppConfiguration.swift in Sources */,
+				D1DAF876258D416B004F1A6F /* CategoryCollectionViewCell.swift in Sources */,
+				D1DAF85C258D2328004F1A6F /* NetworkManager.swift in Sources */,
 				D1DAF826258D2105004F1A6F /* AppDelegate.swift in Sources */,
+				D1DAF867258D365D004F1A6F /* HomeViewController.swift in Sources */,
+				D1DAF869258D366E004F1A6F /* ViewController.swift in Sources */,
+				D1DAF87A258D418D004F1A6F /* RestaurantCollectionViewCell.swift in Sources */,
+				D1DAF87E258D41A7004F1A6F /* TableViewCell.swift in Sources */,
 				D1DAF828258D2105004F1A6F /* SceneDelegate.swift in Sources */,
+				D1DAF882258D461E004F1A6F /* RestaurantTableViewCell.swift in Sources */,
+				D1DAF873258D3E84004F1A6F /* AppExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +676,7 @@
 		};
 		D1DAF84D258D210B004F1A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D02FBC4216DCDCA20B4924 /* Pods-Apptunix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +695,7 @@
 		};
 		D1DAF84E258D210B004F1A6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4A8D13F24C50F50A415A32F /* Pods-Apptunix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +714,7 @@
 		};
 		D1DAF850258D210B004F1A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80315EB8473E872DE9365771 /* Pods-ApptunixTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +737,7 @@
 		};
 		D1DAF851258D210B004F1A6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 291C6912D407EEC1B1AB8174 /* Pods-ApptunixTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +760,7 @@
 		};
 		D1DAF853258D210B004F1A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A89B975702F9880005ECB4A /* Pods-Apptunix-ApptunixUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +781,7 @@
 		};
 		D1DAF854258D210B004F1A6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6A7EB570F7F2AD33846D53 /* Pods-Apptunix-ApptunixUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

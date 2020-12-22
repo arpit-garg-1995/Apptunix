@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="Apptunix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOP-IR-8S9">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RmK-eq-dWH">
+                                <rect key="frame" x="40" y="8" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="6Cq-i2-lGK"/>
+                                    <constraint firstAttribute="height" constant="120" id="xJs-oC-usV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlG-rm-ACo">
+                                <rect key="frame" x="4" y="136" width="192" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VlG-rm-ACo" secondAttribute="trailing" constant="4" id="41X-ck-Im5"/>
+                            <constraint firstItem="VlG-rm-ACo" firstAttribute="leading" secondItem="HOP-IR-8S9" secondAttribute="leading" constant="4" id="LNb-oj-PaW"/>
+                            <constraint firstAttribute="bottom" secondItem="VlG-rm-ACo" secondAttribute="bottom" constant="8" id="XVQ-kZ-hcQ"/>
+                            <constraint firstItem="RmK-eq-dWH" firstAttribute="top" secondItem="HOP-IR-8S9" secondAttribute="top" constant="8" id="YkS-Yr-9CO"/>
+                            <constraint firstItem="VlG-rm-ACo" firstAttribute="top" secondItem="RmK-eq-dWH" secondAttribute="bottom" constant="8" id="a7e-k0-JuD"/>
+                            <constraint firstItem="RmK-eq-dWH" firstAttribute="centerX" secondItem="HOP-IR-8S9" secondAttribute="centerX" id="qFz-yJ-b5P"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HOP-IR-8S9" secondAttribute="trailing" id="0kT-rq-53p"/>
+                <constraint firstItem="HOP-IR-8S9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0r1-t8-gLd"/>
+                <constraint firstItem="HOP-IR-8S9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fcD-6e-K5T"/>
+                <constraint firstAttribute="bottom" secondItem="HOP-IR-8S9" secondAttribute="bottom" id="vxm-rV-IYI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="cImage" destination="RmK-eq-dWH" id="YbC-bB-2Aq"/>
+                <outlet property="cLabel" destination="VlG-rm-ACo" id="er5-jm-K4j"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="145"/>
+        </collectionViewCell>
+    </objects>
+</document>
